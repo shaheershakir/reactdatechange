@@ -32,7 +32,7 @@ export default function QRCode() {
         >
           Code:{" "}
           <textarea
-            style={{ margin: "10px" }}
+            style={{ margin: "10px", fontSize: "1.3em" }}
             name="QRinput"
             rows={4}
             cols={40}
