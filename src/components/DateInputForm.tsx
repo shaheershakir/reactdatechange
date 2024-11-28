@@ -111,7 +111,11 @@ export default function DateInputForm() {
           }}
         >
           <button
-            style={{ padding: "8px 16px", marginRight: "10px" }}
+            style={{
+              padding: "8px 16px",
+              marginRight: "10px",
+              color: "#E02F2C",
+            }}
             type="button"
             onClick={() => setDateInputValue("")}
           >
