@@ -13,7 +13,7 @@ export default function QRCode() {
 
     // Call the function to get the date
     const response = await fetch(
-      `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${input}`
+      `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${input}`
     );
     const data = response.url;
 
