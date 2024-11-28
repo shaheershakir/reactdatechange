@@ -69,3 +69,6 @@ button {
   border: 3px solid transparent; /* Change border color when button is clicked */
 }
 
+label {
+  margin: 1em 1em 0 0.5em;
+}
