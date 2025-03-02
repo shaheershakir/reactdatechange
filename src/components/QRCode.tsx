@@ -24,6 +24,14 @@ export default function QRCode() {
     console.log(QRCode);
   }
 
+  const currentDate = new Date().toISOString().split("T")[0];
+
+  const exipyDateObj = new Date();
+
+  exipyDateObj.setDate(exipyDateObj.getDate() + 60);
+
+  const ExpiryDate = exipyDateObj.toISOString().split("T")[0];
+
   return (
     <div>
       <form method="post" onSubmit={handleSubmit} style={{ margin: "20px" }}>
@@ -36,9 +44,7 @@ export default function QRCode() {
             name="QRinput"
             rows={4}
             cols={40}
-            defaultValue={
-              '{"id_number":2578439974,"occupation":" عامل انشاءات ","status":"ساري","issue_date":"2024-11-23","expiry_date":"2025-05-22"}'
-            }
+            defaultValue={`{"id_number":2578439974,"occupation":" عامل انشاءات ","status":"ساري","issue_date":"${currentDate}","expiry_date":"${ExpiryDate}"}`}
           />
         </label>
 
